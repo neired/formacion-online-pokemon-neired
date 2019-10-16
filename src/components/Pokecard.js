@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Pokecard = props => {
-    const {} = props;
+    const {name} = props;
   
     return (
       <>
       <div>
           <div>
-              <img src="" alt=""></img>
+              <img src="" alt={name}></img>
               <p></p>
           </div>
           <div>

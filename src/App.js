@@ -15,6 +15,9 @@ class App extends React.Component {
     this.getUserInput = this.getUserInput.bind(this);
   }
 
+  componentDidMount() {
+    this.paintPokemons();
+  }
 
   getUserInput(event) {
     const userInput = event.currentTarget.value;
@@ -29,7 +32,7 @@ class App extends React.Component {
         this.setState({
           pokemons: data.results,
         });
-      });
+      }, console.log(this.state.pokemons));
   }
   render() {
     return (
@@ -38,7 +41,9 @@ class App extends React.Component {
         <Filter 
           getUserInput={this.getUserInput} 
           userInput={this.state.userInput}/>
-        <Pokemons/>
+        <Pokemons
+          userInput={this.state.userInput}
+          pokemons={this.state.pokemons}/>
       </div>
     );
   }
