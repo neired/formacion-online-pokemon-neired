@@ -1,5 +1,8 @@
 import React from 'react';
-import './App.css';
+import './styles/App.scss';
+import Pokemons from './components/Pokemons';
+import Filter from './components/Filter';
+
 
 class App extends React.Component {
   // constructor(props) {
@@ -8,9 +11,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        
-      </div>
+      <>
+      <h1>Mi Pokedex</h1>
+        <Filter/>
+        <Pokemons/>
+      </>
     );
   }
 }
