@@ -32,7 +32,7 @@ class App extends React.Component {
         this.setState({
           pokemons: data.results,
         });
-      }, console.log(this.state.pokemons));
+      });
   }
   render() {
     return (

@@ -1,7 +1,7 @@
 const ENDPOINT = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=25';
 
-const getPokemons = (userInput) => {
-  return fetch(ENDPOINT + userInput)
+const getPokemons = () => {
+  return fetch(ENDPOINT)
     .then(res=>res.json());
 };
 
