@@ -27,23 +27,32 @@ class App extends React.Component {
   }
 
   paintPokemons() {
-    getPokemons(this.state.userInput)
+    getPokemons()
       .then(data => {
-        this.setState({
-          pokemons: data.results,
+        const pokeArr = data.results.map(item => {
+          return fetch(item.url)
+            .then(response => response.json());
         });
-      });
+        return Promise.all(pokeArr);
+      })
+      .then(info => {
+        this.setState({
+          pokemons: info,
+        });
+      })
   }
+
   render() {
+    const {userInput, pokemons} = this.state;
     return (
       <div className="app">
       <h1>Mi Pokedex</h1>
         <Filter 
           getUserInput={this.getUserInput} 
-          userInput={this.state.userInput}/>
+          userInput={userInput}/>
         <Pokemons
-          userInput={this.state.userInput}
-          pokemons={this.state.pokemons}/>
+          userInput={userInput}
+          pokemons={pokemons}/>
       </div>
     );
   }

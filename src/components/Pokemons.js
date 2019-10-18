@@ -9,10 +9,11 @@ const Pokemons = props => {
       {pokemons
         .filter(pokemon => pokemon.name.toUpperCase()
         .includes(userInput.toUpperCase()))
-        .map((pokemon, index) => { return (
-          <li className="pokemon-li" key={index}>
+        .map((pokemon) => { return (
+          <li className="pokemon-li" key={pokemon.id}>
             <Pokecard 
-              url={pokemon.url}
+              pokemon={pokemon}
+              key={pokemon.id}
             />
           </li>
         )})}
