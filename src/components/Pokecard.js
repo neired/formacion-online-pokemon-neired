@@ -1,23 +1,6 @@
 import React from 'react';
 
 class Pokecard extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     pokemonItem : {}
-  //   }
-  // }
-
-  // componentDidMount(){
-  //   fetch(this.props.url)
-  //     .then(res=>res.json())
-  //     .then(data => {
-  //       this.setState({
-  //         pokemonItem: data,
-  //       });
-  //     })
-  //   };
-
   render() {
     const { pokemon } = this.props;
 
