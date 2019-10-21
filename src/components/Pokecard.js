@@ -29,8 +29,7 @@ class Pokecard extends React.Component {
 }
 
 Pokecard.propTypes = {
-  pokemon: PropTypes.object,
-  key: PropTypes.number,
+  pokemon: PropTypes.object
 }
 
 export default Pokecard;
