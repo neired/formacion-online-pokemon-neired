@@ -6,6 +6,7 @@
 .app {
   text-align: center;
   background-color: yellow;
+  height: 100vh;
   margin: 0;
   padding: 10px;
 }
@@ -16,7 +17,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  font-size: 1px;
+  font-size: 0.1px;
+  color: yellow;
   height: 100px;  
   margin-bottom: 10px;
 }
