@@ -1,0 +1,31 @@
+.pokemon-card_top-container {
+    background-color: lightgray;
+    height: 118px;
+}
+
+.pokemon-bottom-container {
+    background-color: white;
+}
+
+.pokemon-name {
+    text-transform: capitalize;
+    text-align: start;
+    padding-left: 15px;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.pokemon-types {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    padding-left: 15px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.pokemon-type {
+    border: gray 1px solid;
+    border-radius: 5px;
+    padding: 4px;
+}

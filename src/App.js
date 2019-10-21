@@ -46,7 +46,7 @@ class App extends React.Component {
     const {userInput, pokemons} = this.state;
     return (
       <div className="app">
-      <h1>Mi Pokedex</h1>
+      <h1 className="main-title">Mi Pokedex</h1>
         <Filter 
           getUserInput={this.getUserInput} 
           userInput={userInput}/>

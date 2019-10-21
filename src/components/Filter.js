@@ -1,13 +1,14 @@
 import React from 'react';
+import './../styles/filter.scss';
 
 const Filter = props => {
   const {getUserInput, userInput} = props;
   
   return (
-    <div className="input-container">
-      <label></label>
-      <input type="text" placeholder="Filtra pokemons por nombre..." onChange={getUserInput} value={userInput}></input>
-    </div>
+    <>
+      <label for="name"></label>
+      <input className="input" type="text" name="name" placeholder="Filtra pokemons por nombre..." onChange={getUserInput} value={userInput}></input>
+    </>
   );
 };
 

@@ -1,0 +1,15 @@
+.pokelist {
+    list-style: none;
+    justify-content: center;
+    padding-left: 0;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 180px 180px 180px 180px;
+}
+
+.pokemon-li {
+    border: gray 1px solid;
+    border-radius: 4px;
+    width: 180px;
+}
+

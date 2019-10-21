@@ -1,4 +1,5 @@
 import React from 'react';
+import './../styles/pokecard.scss';
 
 class Pokecard extends React.Component {
   render() {
@@ -13,10 +14,10 @@ class Pokecard extends React.Component {
         <div className="pokemon-bottom-container">
           <h2 className="pokemon-name">{pokemon.name}</h2>
           <div className="pokemon-types_container">
-            <ul className="pokemon-type">
+            <ul className="pokemon-types">
               {pokemon.types
                 .map((type, index) => { return (
-                  <li key={index}>{type.type.name}</li>
+                  <li className="pokemon-type" key={index}>{type.type.name}</li>
               )})}
             </ul>
           </div>

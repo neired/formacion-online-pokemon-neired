@@ -1,5 +1,6 @@
 import React from 'react';
 import Pokecard from './Pokecard';
+import './../styles/pokemons.scss';
 
 const Pokemons = props => {
   const {pokemons, userInput} = props;
