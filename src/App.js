@@ -3,7 +3,6 @@ import './styles/App.scss';
 import Pokemons from './components/Pokemons';
 import Filter from './components/Filter';
 import {getPokemons} from './services/api';
-// import PropTypes from 'prop-types';
 
 class App extends React.Component {
   constructor(props) {

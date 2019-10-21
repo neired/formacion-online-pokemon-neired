@@ -3,7 +3,13 @@
     height: 30px;
     padding-left: 15px;
     text-align: center;
+    font-size: 14px;
     margin-bottom: 15px;
+    border: none;
+    box-shadow: 1px 1px 10px 1px lightgrey; 
+    @media all and (max-width:768px) {
+        width: 320px;
+    }
 }
 .input::placeholder {
     color: rgb(182, 176, 176);

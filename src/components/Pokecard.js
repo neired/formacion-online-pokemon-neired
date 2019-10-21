@@ -1,5 +1,6 @@
 import React from 'react';
 import './../styles/pokecard.scss';
+import PropTypes from 'prop-types';
 
 class Pokecard extends React.Component {
   render() {
@@ -25,6 +26,11 @@ class Pokecard extends React.Component {
       </div>
     );
   }
+}
+
+Pokecard.propTypes = {
+  pokemon: PropTypes.object,
+  key: PropTypes.number,
 }
 
 export default Pokecard;

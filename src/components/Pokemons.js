@@ -1,6 +1,7 @@
 import React from 'react';
 import Pokecard from './Pokecard';
 import './../styles/pokemons.scss';
+import PropTypes from 'prop-types';
 
 const Pokemons = props => {
   const {pokemons, userInput} = props;
@@ -26,5 +27,10 @@ const Pokemons = props => {
     </ol>
   );}
 };
+
+Pokemons.propTypes = {
+  pokemons: PropTypes.array,
+  userInput: PropTypes.string,
+}
 
 export default Pokemons;

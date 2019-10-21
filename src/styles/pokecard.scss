@@ -1,10 +1,19 @@
 .pokemon-card_top-container {
-    background-color: lightgray;
+    background-color: #DFDFDF;
     height: 118px;
 }
 
 .pokemon-bottom-container {
     background-color: white;
+}
+
+.pokemon-id{
+    text-align: start;
+    background-color: #D1CECA;
+    font-size: 12px;
+    width: 30px;
+    padding: 3px 3px;
+    color: #785D43;
 }
 
 .pokemon-name {

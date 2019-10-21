@@ -4,12 +4,16 @@
     padding-left: 0;
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: 180px 180px 180px 180px;
+    grid-template-columns: 182px 182px 182px 182px;
+    @media all and (max-width:768px) {
+        grid-template-columns: 182px 182px;
+    }
 }
 
 .pokemon-li {
-    border: gray 1px solid;
-    border-radius: 4px;
-    width: 180px;
+    border: #DFDFDF 1px solid;
+    border-radius: 2px;
+    width: 182px;
+    box-shadow: 1px 1px 4px 1px grey; 
 }
 
